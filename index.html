@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Свадьба Сергея и Анны</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="profile">
+    <img src="photo.jpg" alt="Молодожёны" class="profile-pic" />
+    <h1>Сергей & Анна</h1>
+    <p>Вы приглашены на нашу свадьбу!</p>
+  </div>
+
+  <div class="timer">
+    <h2>До свадьбы осталось:</h2>
+    <div id="countdown">
+      <span><b id="days">0</b> дней</span>
+      <span><b id="hours">0</b> часов</span>
+      <span><b id="minutes">0</b> минут</span>
+      <span><b id="seconds">0</b> секунд</span>
+    </div>
+  </div>
+
+  <div class="menu">
+    <a href="#map" class="button">📍 Место проведения</a>
+    <a href="#rsvp" class="button">💌 Подтвердить присутствие</a>
+  </div>
+
+  <div id="map" class="section">
+    <h3>Место проведения</h3>
+    <iframe 
+      src=" https://www.google.com/maps/embed?https://yandex.ru/navi/org/vaspurakan/1148555878?si=x2m4jb2rnzhzy7j3yfdudwxpww"
+      width="100%" height="250" style="border:0;" allowfullscreen loading="lazy"></iframe>
+  </div>
+
+  <div id="rsvp" class="section">
+    <h3>Подтвердите участие</h3>
+    <form id="rsvpForm">
+      <input type="text" name="name" placeholder="Ваше имя" required />
+      <select name="attending" required>
+        <option value="">Придёте ли вы?</option>
+        <option value="yes">Да, буду</option>
+        <option value="no">Нет, не смогу</option>
+      </select>
+      <button type="submit">Отправить</button>
+    </form>
+    <p id="thankYouMessage">Спасибо за ответ!</p>
+  </div>
+
+  <footer>
+    <p>© 2025 Сергей & Анна</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
